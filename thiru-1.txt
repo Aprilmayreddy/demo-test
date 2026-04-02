@@ -1,0 +1,9 @@
+========================
+IMP: Even though the state is stored in S3, Terraform still keeps backend connection metadata locally.
+Local .terraform folder contains: providers modules and backend config.  Terraform downloads and stores local working data inside .terraform. 
+These binaries are needed to run Terraform commands.
+
+Remote S3 backend: terraform.tfstate
+
+
+So your state is NOT stored locally anymore.
